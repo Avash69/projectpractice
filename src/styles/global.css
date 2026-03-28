@@ -4,17 +4,18 @@
   --brand: #ff4d4f; /* The red 'X' color */
   
   /* Background & Surface */
-  --bg: #e0e8e0; /* Light greenish background */
+  --bg: #f8fafc; /* Premium icy cool white */
   --surface: #ffffff;
+  --surface-alpha: rgba(255, 255, 255, 0.85);
   --surface-solid: #ffffff;
   
   /* Text Colors */
-  --text: #5a5f6a;
-  --text-strong: #111827;
-  --muted: #8a90a0;
+  --text: #475569;
+  --text-strong: #0f172a;
+  --muted: #94a3b8;
   
   /* Borders */
-  --border: #e6e8eb;
+  --border: #e2e8f0;
   
   /* Shadows */
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
@@ -39,10 +40,12 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 a {
@@ -63,16 +66,17 @@ button {
 }
 
 html[data-theme="dark"] {
-  --bg: #111827;
-  --surface: #1f2937;
-  --surface-solid: #1f2937;
+  --bg: #0f172a; /* Deep elegant slate navy */
+  --surface: #1e293b;
+  --surface-alpha: rgba(30, 41, 59, 0.85);
+  --surface-solid: #1e293b;
   
-  --text: #9ca3af;
-  --text-strong: #f9fafb;
-  --muted: #6b7280;
+  --text: #cbd5e1;
+  --text-strong: #f8fafc;
+  --muted: #64748b;
   
-  --border: #374151;
+  --border: #334155;
   
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
 }
