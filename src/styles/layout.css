@@ -63,15 +63,13 @@
 
 /* Main Header */
 .mainHeader {
-  background: var(--surface-alpha);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
   position: sticky;
   top: 0;
   z-index: 50;
-  transition: background 0.4s ease, border-color 0.4s ease;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .headerInner {
@@ -91,31 +89,23 @@
 }
 
 .brandIcon {
-  width: 34px;
-  height: 34px;
-  background: linear-gradient(135deg, #ff4d4f, #fca5a5);
+  width: 32px;
+  height: 32px;
+  background: var(--brand);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  box-shadow: 0 4px 10px rgba(255, 77, 79, 0.3);
 }
 
 .brandText {
-  background: linear-gradient(90deg, var(--text-strong), #64748b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.4s ease;
+  color: var(--text-strong);
 }
 
 html[data-theme="dark"] .brandText {
-  background: linear-gradient(90deg, #f8fafc, #cbd5e1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-strong);
 }
 
 .mainNav {
