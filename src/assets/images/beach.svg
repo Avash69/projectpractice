@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd7a6"/>
+      <stop offset="0.45" stop-color="#ff8a2b" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0ea5e9" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0b1220" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="280" cy="220" r="130" fill="#fff" opacity="0.35"/>
+  <rect y="420" width="1200" height="380" fill="url(#sea)"/>
+  <path d="M0 560c160-40 280-30 420 15 160 55 280 55 420 10 150-45 270-40 360 10v205H0z" fill="#ffffff" opacity="0.25"/>
+  <g filter="url(#shadow)">
+    <path d="M140 610c120-90 240-120 360-85 120 35 240 15 360-35 150-60 290-50 340 20v290H140z" fill="#0b1220" opacity="0.18"/>
+  </g>
+</svg>
+

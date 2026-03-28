@@ -1,0 +1,78 @@
+/* Global tokens + base styles */
+:root {
+  /* Brand Colors */
+  --brand: #ff4d4f; /* The red 'X' color */
+  
+  /* Background & Surface */
+  --bg: #e0e8e0; /* Light greenish background */
+  --surface: #ffffff;
+  --surface-solid: #ffffff;
+  
+  /* Text Colors */
+  --text: #5a5f6a;
+  --text-strong: #111827;
+  --muted: #8a90a0;
+  
+  /* Borders */
+  --border: #e6e8eb;
+  
+  /* Shadows */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+
+  /* Layout */
+  --container: 1140px;
+  
+  /* Chip colors */
+  --c-sports: #ff4d4f;
+  --c-fashion: #8b5cf6;
+  --c-lifestyle: #10b981;
+  --c-news: #3b82f6;
+  --c-trends: #0ea5e9;
+  --c-popular: #f43f5e;
+  --c-business: #f59e0b;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+html[data-theme="dark"] {
+  --bg: #111827;
+  --surface: #1f2937;
+  --surface-solid: #1f2937;
+  
+  --text: #9ca3af;
+  --text-strong: #f9fafb;
+  --muted: #6b7280;
+  
+  --border: #374151;
+  
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,497 @@
+/* Cards & Surfaces */
+.card {
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.surface {
+  background: var(--surface);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-strong);
+  margin: 0 0 20px;
+  padding: 24px 24px 0;
+}
+
+.sectionTitleCenter {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-strong);
+  margin: 0 0 24px;
+  padding: 24px;
+  text-align: center;
+}
+
+/* Categories Row */
+.categoriesCard {
+  margin-top: -32px;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.categoriesRow {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 0 24px 32px;
+}
+
+.catItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.catThumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.catItem:hover .catThumb {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.catThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.catBadge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--brand);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+.catName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+/* Popular News */
+.popNewsCard {
+  padding-bottom: 16px;
+}
+
+.newsListGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 20px;
+  padding: 0 24px 24px;
+}
+
+.newsItemCompact {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.newsThumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.newsItemCompact:hover .newsThumb {
+  transform: scale(1.05);
+}
+
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.newsTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.4;
+}
+
+/* Chips */
+.chipRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chipSports { background: var(--c-sports); }
+.chipFashion { background: var(--c-fashion); }
+.chipLifestyle { background: var(--c-lifestyle); }
+.chipNews { background: var(--c-news); }
+.chipTrends { background: var(--c-trends); }
+.chipPopular { background: var(--c-popular); }
+.chipBusiness { background: var(--c-business); }
+
+/* Sidebar Ads & Trending */
+.adSaleCard {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  padding: 32px 16px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #fecdd3;
+  box-shadow: 0 4px 15px rgba(225, 29, 72, 0.08);
+}
+
+.adSaleCard::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%; width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 60%);
+  animation: rotate 12s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate { 
+  100% { transform: rotate(360deg); } 
+}
+
+.adSaleContent {
+  color: #be185d;
+}
+
+.adSmallText {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.adSaleTitle {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 8px 0;
+  line-height: 1;
+}
+
+.adSaleDiscount {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.adSaleDiscount small {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.trendingCard {
+  margin-top: 24px;
+}
+
+.trendingList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 24px 24px;
+}
+
+.trendingItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+}
+
+.trendIndex {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  border: 2px solid white;
+}
+
+.bgSports { background: var(--c-sports); }
+.bgFashion { background: var(--c-fashion); }
+
+.trendThumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.trendThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trendContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trendTitle {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.4;
+}
+
+.trendDate {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Leaderboard Ad */
+.leaderboardAd {
+  background: linear-gradient(to right, #fef9c3, #fef08a);
+  border: 1px dashed #eab308;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  color: #a16207;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 32px 0;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);
+}
+
+/* Featured Overlay Cards */
+.featOverlayCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 300px;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+.featOverlayCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+  transition: background 0.4s ease;
+}
+
+.featOverlayCard:hover::after {
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+}
+
+.featOverlayCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.featOverlayCard:hover img {
+  transform: scale(1.08);
+}
+
+.featOverlayContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.featMeta {
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+}
+
+/* Featured Articles List */
+.featuredListCard {
+  padding-bottom: 24px;
+}
+
+.featGrid3Col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 24px 24px;
+}
+
+.featArticleCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.featArtThumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.featArticleCard:hover .featArtThumb {
+  transform: scale(1.03);
+}
+
+.featArtContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featTitleDark {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-strong);
+  line-height: 1.3;
+}
+
+.featMetaDark {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.featExcerpt {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
+.readMoreLink {
+  color: var(--brand);
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+}
+
+.readMoreLink::after {
+  content: '\2192';
+  transition: transform 0.2s ease;
+  font-size: 14px;
+}
+
+.readMoreLink:hover {
+  text-decoration: none;
+  color: #e11d48;
+}
+
+.readMoreLink:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 980px) {
+  .categoriesRow {
+    flex-wrap: wrap;
+  }
+  .newsListGrid {
+    grid-template-columns: 1fr;
+  }
+  .featGrid3Col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Dark Theme Overrides --- */
+html[data-theme="dark"] .catBadge,
+html[data-theme="dark"] .trendIndex {
+  border-color: var(--surface);
+}
+
+html[data-theme="dark"] .adSaleCard {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  border-color: #4b5563;
+}
+html[data-theme="dark"] .adSaleContent {
+  color: #fb7185;
+}
+
+html[data-theme="dark"] .leaderboardAd {
+  background: linear-gradient(to right, #422006, #713f12);
+  border-color: #a16207;
+  color: #fef08a;
+}

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>X online.</title>
+  </head>
+  <body>
+    <!-- Topbar (Orange Gradient) -->
+    <div class="topBarPromo">
+      <div class="container topBarPromoInner">
+        <nav class="topBarNav">
+          <a href="#">About</a>
+          <a href="#">Our Story</a>
+          <a href="#">Buy Now</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="topBarRight">
+          <div class="socialIcons">
+            <a href="#" class="socialIcon socialFb" aria-label="Facebook">f</a>
+            <a href="#" class="socialIcon socialIg" aria-label="Instagram">i</a>
+            <a href="#" class="socialIcon socialIn" aria-label="LinkedIn">in</a>
+            <a href="#" class="socialIcon socialX" aria-label="X">x</a>
+          </div>
+          <span class="topBarDate">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Thursday, March 28
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="mainHeader surface">
+      <div class="container headerInner">
+        <a href="#" class="brand">
+          <span class="brandIcon">X</span>
+          <span class="brandText">online.</span>
+        </a>
+        <nav class="mainNav">
+          <a href="#" class="active">Home</a>
+          <a href="#">Lifestyle</a>
+          <a href="#">News</a>
+          <a href="#">Sports</a>
+          <a href="#">Trends</a>
+          <a href="#">Popular</a>
+          <a href="#">Business</a>
+        </nav>
+        <div class="headerActions">
+          <button class="searchBtn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" class="icon"><path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="2.5"/><path d="M16.2 16.2 21 21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </button>
+          <button class="moonBtn" aria-label="Dark Mode">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <!-- Popular Categories Menu -->
+        <section class="card categoriesCard">
+          <h3 class="sectionTitleCenter">Popular Categories</h3>
+          <div class="categoriesRow">
+            <div class="catItem">
+              <div class="catThumb">
+                <img src="/src/assets/images/figma-design.png" alt="Fashion" />
+                <span class="catBadge">1</span>
+              </div>
+              <span class="catName">Fashion</span>
+            </div>
+            <div class="catItem">
+              <div class="catThumb">
+                <img src="/src/assets/images/figma-design.png" alt="Business" />
+                <span class="catBadge">2</span>
+              </div>
+              <span class="catName">Business</span>
+            </div>
+            <div class="catItem">
+              <div class="catThumb">
+                <img src="/src/assets/images/figma-design.png" alt="Lifestyle" />
+                <span class="catBadge">3</span>
+              </div>
+              <span class="catName">Lifestyle</span>
+            </div>
+            <div class="catItem">
+              <div class="catThumb">
+                <img src="/src/assets/images/figma-design.png" alt="News" />
+                <span class="catBadge">4</span>
+              </div>
+              <span class="catName">News</span>
+            </div>
+            <div class="catItem">
+              <div class="catThumb">
+                <img src="/src/assets/images/figma-design.png" alt="Popular" />
+                <span class="catBadge">5</span>
+              </div>
+              <span class="catName">Popular</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular News (Left) / Sidebar (Right) -->
+        <div class="gridTwoCol">
+          <!-- LEFT: Popular News-->
+          <section class="card popNewsCard">
+            <h3 class="sectionTitle">Popular News</h3>
+            <div class="newsListGrid">
+              <!-- Item 1 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipSports">Sports</span>
+                    <span class="chip chipTrends">Trends</span>
+                  </div>
+                  <h4 class="newsTitle">Why It Might Work For You In Travelling</h4>
+                </div>
+              </article>
+              <!-- Item 2 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipFashion">Fashion</span>
+                    <span class="chip chipTrends">Trends</span>
+                  </div>
+                  <h4 class="newsTitle">Kate Middleton Repeats Dress for a Trip</h4>
+                </div>
+              </article>
+              <!-- Item 3 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipLifestyle">Lifestyle</span>
+                  </div>
+                  <h4 class="newsTitle">Leon Bridges Rising Stars, Talk Teaming Up</h4>
+                </div>
+              </article>
+              <!-- Item 4 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipNews">News</span>
+                    <span class="chip chipPopular">Popular</span>
+                  </div>
+                  <h4 class="newsTitle">Which Major Character Died In Season 6 Finale?</h4>
+                </div>
+              </article>
+              <!-- Item 5 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipSports">Sports</span>
+                  </div>
+                  <h4 class="newsTitle">What Daredevil Got Right That Walking Dead</h4>
+                </div>
+              </article>
+              <!-- Item 6 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipBusiness">Business</span>
+                    <span class="chip chipLifestyle">Lifestyle</span>
+                  </div>
+                  <h4 class="newsTitle">Republicans Say They're Embarrassed by Trump</h4>
+                </div>
+              </article>
+              <!-- Item 7 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipFashion">Fashion</span>
+                  </div>
+                  <h4 class="newsTitle">What's New in Your Favourite Stores</h4>
+                </div>
+              </article>
+              <!-- Item 8 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipBusiness">Business</span>
+                  </div>
+                  <h4 class="newsTitle">Things to do in New York This Summer</h4>
+                </div>
+              </article>
+               <!-- Item 9 -->
+               <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipTrends">Trends</span>
+                  </div>
+                  <h4 class="newsTitle">Tell the World How It's Great</h4>
+                </div>
+              </article>
+              <!-- Item 10 -->
+              <article class="newsItemCompact">
+                <img src="/src/assets/images/figma-design.png" alt="news" class="newsThumb" />
+                <div class="newsContent">
+                  <div class="chipRow">
+                    <span class="chip chipLifestyle">Lifestyle</span>
+                  </div>
+                  <h4 class="newsTitle">How To Create Dope Content</h4>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- RIGHT: Sidebar Ads & Trending -->
+          <aside class="sidebar">
+            <div class="card adSaleCard">
+              <div class="adSaleContent">
+                <span class="adSmallText">BIGGEST FASHION</span>
+                <h4 class="adSaleTitle">SALE</h4>
+                <div class="adSaleDiscount">20% <small>OFF</small></div>
+              </div>
+            </div>
+
+            <div class="card trendingCard">
+              <h3 class="sectionTitle">Trending Now</h3>
+              <div class="trendingList">
+                <article class="trendingItem">
+                  <span class="trendIndex bgSports">01</span>
+                  <div class="trendThumb"><img src="/src/assets/images/figma-design.png" alt="trend"/></div>
+                  <div class="trendContent">
+                    <h4 class="trendTitle">Republicans Say They're Embarrassed by Trump</h4>
+                    <span class="trendDate">July 2, 2023</span>
+                  </div>
+                </article>
+                <article class="trendingItem">
+                  <span class="trendIndex bgSports">02</span>
+                  <div class="trendThumb"><img src="/src/assets/images/figma-design.png" alt="trend"/></div>
+                  <div class="trendContent">
+                    <h4 class="trendTitle">What Daredevil Got Right That Walking Dead</h4>
+                    <span class="trendDate">July 2, 2023</span>
+                  </div>
+                </article>
+                <article class="trendingItem">
+                  <span class="trendIndex bgFashion">03</span>
+                  <div class="trendThumb"><img src="/src/assets/images/figma-design.png" alt="trend"/></div>
+                  <div class="trendContent">
+                    <h4 class="trendTitle">Which Major Character Died In Season 6 Finale?</h4>
+                    <span class="trendDate">July 2, 2023</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Leaderboard Ad -->
+        <div class="leaderboardAd">
+          <span>Responsive Leaderboard Ad</span>
+        </div>
+
+        <!-- 3 Overlay Cards -->
+        <div class="featuredOverlayRow">
+          <article class="featOverlayCard">
+            <img src="/src/assets/images/figma-design.png" alt="" />
+            <div class="featOverlayContent">
+              <div class="chipRow">
+                <span class="chip chipBusiness">Business</span>
+                <span class="chip chipLifestyle">Lifestyle</span>
+              </div>
+              <h3 class="featTitle">Republicans Say They're Embarrassed by Trump</h3>
+              <div class="featMeta">By Rachel Joyma • July 2, 2023</div>
+            </div>
+          </article>
+          <article class="featOverlayCard">
+             <img src="/src/assets/images/figma-design.png" alt="" />
+             <div class="featOverlayContent">
+               <div class="chipRow">
+                 <span class="chip chipSports">Sports</span>
+               </div>
+               <h3 class="featTitle">What Daredevil Got Right That Walking Dead</h3>
+               <div class="featMeta">By Rachel Joyma • July 2, 2023</div>
+             </div>
+           </article>
+           <article class="featOverlayCard">
+             <img src="/src/assets/images/figma-design.png" alt="" />
+             <div class="featOverlayContent">
+               <div class="chipRow">
+                 <span class="chip chipNews">News</span>
+                 <span class="chip chipTrends">Trends</span>
+               </div>
+               <h3 class="featTitle">Which Major Character Died In Season 6 Finale?</h3>
+               <div class="featMeta">By Rachel Joyma • July 2, 2023</div>
+             </div>
+           </article>
+        </div>
+
+        <!-- Featured Articles List (White Card) -->
+        <section class="card featuredListCard">
+          <h3 class="sectionTitle">Featured Articles</h3>
+          <div class="featGrid3Col">
+            <!-- Article 1 -->
+            <article class="featArticleCard">
+              <img src="/src/assets/images/figma-design.png" class="featArtThumb" />
+              <div class="featArtContent">
+                  <div class="chipRow">
+                    <span class="chip chipSports">Sports</span>
+                  </div>
+                  <h3 class="featTitleDark">What Daredevil Got Right That Walking Dead</h3>
+                  <div class="featMetaDark">By Rachel Joyma • July 2, 2023</div>
+                  <p class="featExcerpt">
+                    If you're serious about turning your blog into a business, then you need to start thinking about ways to grow your audience.
+                  </p>
+                  <a href="#" class="readMoreLink">Read More &rarr;</a>
+              </div>
+            </article>
+            <!-- Article 2 -->
+            <article class="featArticleCard">
+               <img src="/src/assets/images/figma-design.png" class="featArtThumb" />
+               <div class="featArtContent">
+                   <div class="chipRow">
+                     <span class="chip chipNews">News</span>
+                     <span class="chip chipPopular">Popular</span>
+                   </div>
+                   <h3 class="featTitleDark">Which Major Character Died In Season 6 Finale?</h3>
+                   <div class="featMetaDark">By Rachel Joyma • July 2, 2023</div>
+                   <p class="featExcerpt">
+                     If you're serious about turning your blog into a business, then you need to start thinking about ways to grow your audience.
+                   </p>
+                   <a href="#" class="readMoreLink">Read More &rarr;</a>
+               </div>
+             </article>
+             <!-- Article 3 -->
+             <article class="featArticleCard">
+               <img src="/src/assets/images/figma-design.png" class="featArtThumb" />
+               <div class="featArtContent">
+                   <div class="chipRow">
+                     <span class="chip chipLifestyle">Lifestyle</span>
+                   </div>
+                   <h3 class="featTitleDark">Leon Bridges Rising Stars, Talk Teaming Up</h3>
+                   <div class="featMetaDark">By Rachel Joyma • July 2, 2023</div>
+                   <p class="featExcerpt">
+                     If you're serious about turning your blog into a business, then you need to start thinking about ways to grow your audience.
+                   </p>
+                   <a href="#" class="readMoreLink">Read More &rarr;</a>
+               </div>
+             </article>
+              <!-- Article 4 -->
+            <article class="featArticleCard">
+               <img src="/src/assets/images/figma-design.png" class="featArtThumb" />
+               <div class="featArtContent">
+                   <div class="chipRow">
+                     <span class="chip chipFashion">Fashion</span>
+                     <span class="chip chipTrends">Trends</span>
+                   </div>
+                   <h3 class="featTitleDark">Kate Middleton Repeats Dress for a Trip</h3>
+                   <div class="featMetaDark">By Rachel Joyma • July 2, 2023</div>
+                   <p class="featExcerpt">
+                     If you're serious about turning your blog into a business, then you need to start thinking about ways to grow your audience.
+                   </p>
+                   <a href="#" class="readMoreLink">Read More &rarr;</a>
+               </div>
+             </article>
+              <!-- Article 5 -->
+            <article class="featArticleCard">
+               <img src="/src/assets/images/figma-design.png" class="featArtThumb" />
+               <div class="featArtContent">
+                   <div class="chipRow">
+                     <span class="chip chipSports">Sports</span>
+                     <span class="chip chipTrends">Trends</span>
+                   </div>
+                   <h3 class="featTitleDark">Why It Might Work For You In Travelling</h3>
+                   <div class="featMetaDark">By Rachel Joyma • July 2, 2023</div>
+                   <p class="featExcerpt">
+                     If you're serious about turning your blog into a business, then you need to start thinking about ways to grow your audience.
+                   </p>
+                   <a href="#" class="readMoreLink">Read More &rarr;</a>
+               </div>
+             </article>
+              <!-- Article 6 -->
+            <article class="featArticleCard">
+               <img src="/src/assets/images/figma-design.png" class="featArtThumb" />
+               <div class="featArtContent">
+                   <div class="chipRow">
+                     <span class="chip chipFashion">Fashion</span>
+                   </div>
+                   <h3 class="featTitleDark">What's New in Your Favourite Stores</h3>
+                   <div class="featMetaDark">By Rachel Joyma • July 2, 2023</div>
+                   <p class="featExcerpt">
+                     If you're serious about turning your blog into a business, then you need to start thinking about ways to grow your audience.
+                   </p>
+                   <a href="#" class="readMoreLink">Read More &rarr;</a>
+               </div>
+             </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
